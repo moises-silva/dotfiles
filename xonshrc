@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+import readline
+
+readline_settings = [
+    'set convert-meta on',
+    'set editing-mode vi',
+    '"\e[A": history-search-backward',
+    '"\e[B": history-search-forward'
+]
+map(lambda x: readline.parse_and_bind(x), readline_settings)
+
+$XONSH_HISTORY_SIZE = 100000
+$PROMPT = '{BOLD_GREEN}{user}@{hostname}{BOLD_BLUE} {cwd}{branch_color}{curr_branch} \n{BOLD_BLUE}${NO_COLOR} '
+
