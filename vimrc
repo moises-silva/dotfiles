@@ -1,3 +1,7 @@
+"execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
 set background=dark
 set cindent
 set nowrap
@@ -5,7 +9,6 @@ set number
 set foldmethod=marker
 set encoding=utf-8
 set hls
-syntax enable
 
 syntax enable
 
@@ -63,3 +66,19 @@ set nocompatible
 set modeline
 set modelines=5
 
+" syntastic recommended settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+if has("autocmd")
+	  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
+color desert
+set cursorline
+set cursorcolumn
