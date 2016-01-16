@@ -1,5 +1,5 @@
 # .bashrc
-export PS1='\[\033[01;31m\]\u@\h \[\033[01;34m\]\W$(__git_ps1 " (%s)") \n\$ \[\033[00m\]'
+export PS1='\[\033[01;31m\]\u@\h \[\033[01;34m\]\W \n\$ \[\033[00m\]'
 
 set -o vi
 bind -m vi-insert "\M-.:yank-last-arg"
@@ -26,6 +26,7 @@ fi
 if [ -f $HOME/.git-completion.bash ]
 then
 	. $HOME/.git-completion.bash
+	export PS1='\[\033[01;31m\]\u@\h \[\033[01;34m\]\W$(__git_ps1 " (%s)") \n\$ \[\033[00m\]'
 fi
 
 ulimit -c unlimited
