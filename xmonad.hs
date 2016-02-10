@@ -2,7 +2,7 @@ import XMonad
 
 import qualified Data.Map as M
 
--- Define a new key map withouth the keys I do not need (keysToRemove)
+-- Define a new key map without the keys I do not need (keysToRemove)
 --newKeys x = foldr M.delete (keys defaultConfig x) (keysToRemove x)
 
 --keysToRemove :: XConfig Layout -> [(KeyMask, KeySym)]
