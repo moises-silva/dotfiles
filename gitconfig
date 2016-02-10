@@ -1,0 +1,7 @@
+[user]
+	email = moises.silva@gmail.com
+	name = Moises Silva
+[status]
+	submoduleSummary = true
+[diff]
+	submodule = log
