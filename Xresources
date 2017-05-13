@@ -1,7 +1,7 @@
 ! URxvt*rxvt-unicode (urxvt) v9.21 - released: 2014-12-31
 ! URxvt*options: perl,xft,styles,combining,blink,iso14755,unicode3,encodings=eu+vn+jp+jp-ext+kr+zh+zh-ext,fade,transparent,tint,XIM,frills,selectionscrolling,wheel,slipwheel,cursorBlink,pointerBlank,scrollbars=plain+rxvt+NeXT+xterm
 ! URxvt*Usage: urxvt [options] [-e command args]
-! URxvt*termName:                       string
+URxvt*termName:                         rxvt
 ! URxvt*geometry:                       geometry
 ! URxvt*chdir:                          string
 ! URxvt*reverseVideo:                   boolean
@@ -34,8 +34,8 @@ URxvt*scrollWithBuffer:                 true
 ! URxvt*mouseWheelScrollPage:           boolean
 ! URxvt*tripleclickwords:               boolean
 ! URxvt*insecure:                       boolean
-! URxvt*cursorUnderline:                boolean
-! URxvt*cursorBlink:                    boolean
+URxvt*cursorUnderline:                  true
+URxvt*cursorBlink:                      true
 ! URxvt*pointerBlank:                   boolean
 URxvt*background:                       black
 URxvt*foreground:                       white
@@ -64,7 +64,7 @@ URxvt*color15: #FFFFFF // white
 ! URxvt*troughColor:                    color
 ! URxvt*highlightColor:                 color
 ! URxvt*highlightTextColor:             color
-! URxvt*cursorColor:                    color
+URxvt*cursorColor:                      green
 ! URxvt*cursorColor2:                   color
 ! URxvt*pointerColor:                   color
 ! URxvt*pointerColor2:                  color

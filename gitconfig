@@ -1,5 +1,5 @@
 [user]
-	email = moises.silva@gmail.com
+	email = msilva@sangoma.com
 	name = Moises Silva
 [status]
 	submoduleSummary = true
@@ -7,3 +7,7 @@
 	submodule = log
 [fetch]
 	recurseSubmodules = true
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true

@@ -7,6 +7,8 @@ bind -m vi-insert "\M-_:yank-mth-arg"
 
 alias vi=vim
 alias screen="screen -h 100000"
+alias pbcopy='xsel --clipboard --input'
+alias pbpaste='xsel --clipboard --output'
 
 export HISTSIZE=10000
 export EDITOR=vim

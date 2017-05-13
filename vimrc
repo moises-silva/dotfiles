@@ -11,6 +11,12 @@ set foldmethod=marker
 set encoding=utf-8
 set hls
 set complete-=k complete+=k
+set tabstop=4
+set shiftwidth=4
+set smarttab
+
+set tw=72
+au FileType gitcommit setl spell et fo+=ct
 
 function InsertTabWrapper()
     let col = col('.') - 1
@@ -42,6 +48,9 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" This is not working https://github.com/scrooloose/syntastic/issues/1612
+" autocmd BufRead *.py    let b:syntastic_python_python_exec = syntastic#util#parseShebang()['exe']
 
 if has("autocmd")
 	  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
